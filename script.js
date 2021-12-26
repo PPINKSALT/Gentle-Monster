@@ -1,18 +1,4 @@
 
-let toggleBtn = document.querySelector('#toggleBtn');
-let menuList = document.querySelector('#header_n');
-let link = document.querySelector('.header_link');
-
-toggleBtn.addEventListener('click', clickFn);
-
-function clickFn()
-{
-    menuList.classList.toggle('active');
-    link.classList.toogle('active');
-}
-
-
-
 
 let categorie = [
     'Best-Seller',
@@ -288,21 +274,21 @@ function makeText()
 
     if(categorie == 0)
     {
-        textBox[subMenu].style.display = 'block';
+        textBox[subMenu].style.display = 'flex';
     }
     else if(categorie == 1)
     {
-        textBox[subMenu + Object.keys(bestG).length].style.display = 'block';
+        textBox[subMenu + Object.keys(bestG).length].style.display = 'flex';
     }
     else 
     {
-        textBox[subMenu + Object.keys(bestG).length + Object.keys(sunG).length].style.display = 'block';
+        textBox[subMenu + Object.keys(bestG).length + Object.keys(sunG).length].style.display = 'flex';
     }
    
     
 }
 
-// render();
+render();
 
 
 
